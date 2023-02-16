@@ -6,7 +6,7 @@ public class Main {
         Scanner entrada = new Scanner(System.in); //Criando uma entrada de dados
         int num = entrada.nextInt(); //Entrando com o número de alunos
 
-        switch (num){ //Estrutura de switch
+        switch (num) { //Estrutura de switch
 
             case 10:
             case 20:
