@@ -9,14 +9,12 @@ public class Main {
         Kart k2 = new Kart("AventuraMovel", "70", 100);
 
         //Configurando p1
-        p1.nome = "Yves";
-        p1.Vilao = true;
-        p1.kart = k1;
+        k1.piloto.nome = "Yves";
+        k1.piloto.vilao = true;
 
         //Configurando p2
-        p2.nome = "Victor";
-        p2.Vilao = true;
-        p2.kart = k2;
+        k2.piloto.nome = "Victor";
+        k2.piloto.vilao = true;
 
         //Realizando as interações
         k1.motor.mostraInfo();

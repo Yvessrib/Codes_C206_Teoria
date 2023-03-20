@@ -4,6 +4,7 @@ public class Kart {
 
     String nome;
     Motor motor;
+    Piloto piloto;
 
     //Usando o construtor com Composição
     public Kart(String nome, String cilindradas, float velocidadeMaxima) {
