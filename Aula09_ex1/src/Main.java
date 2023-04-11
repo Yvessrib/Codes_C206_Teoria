@@ -9,9 +9,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-        boolean flag = true;
-
         BrownieNutella bn = new BrownieNutella("Nutellinha", 7,"Nutella");
         BrownieCafe bc = new BrownieCafe("Cafezito", 6,"Café");
         BrownieDoceDeLeite bd = new BrownieDoceDeLeite("Latte", 7, "Doce de leite");
@@ -29,6 +26,7 @@ public class Main {
         comp.efetuarCompra(bc);
         comp.efetuarCompra(bd);
 
+        System.out.println("Saldo final do cliente: R$ " + comp.getSaldo());
 
     }
 }

@@ -4,8 +4,8 @@ import brownies.Brownie;
 
 public class Comprador {
 
-    String nome;
-    Double saldo;
+    private String nome;
+    private Double saldo;
 
     public Comprador(String nome, Double saldo) {
         this.nome = nome;
@@ -17,7 +17,10 @@ public class Comprador {
         brownie.addCarrinhoDeCompras();
         brownie.calculaValorTotalCompra();
         System.out.println("Comprador comprou o brownie "+ brownie.getNome());
+        saldo -= brownie.getPreco();
     }
 
-
+    public Double getSaldo() {
+        return saldo;
+    }
 }
