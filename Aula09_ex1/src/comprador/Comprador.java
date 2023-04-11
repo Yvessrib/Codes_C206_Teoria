@@ -1,0 +1,23 @@
+package comprador;
+
+import brownies.Brownie;
+
+public class Comprador {
+
+    String nome;
+    Double saldo;
+
+    public Comprador(String nome, Double saldo) {
+        this.nome = nome;
+        this.saldo = saldo;
+    }
+
+    public void efetuarCompra(Brownie brownie){
+        System.out.println("\n-------------");
+        brownie.addCarrinhoDeCompras();
+        brownie.calculaValorTotalCompra();
+        System.out.println("Comprador comprou o brownie "+ brownie.getNome());
+    }
+
+
+}
